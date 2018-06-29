@@ -22,5 +22,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button bSubmit_Hydration = (Button) findViewById(R.id.bSubmit_Hydration);
+        bSubmit_Hydration.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent2 = new Intent(MainActivity.this, Hydration_ex.class);
+                startActivity(intent2);
+            }
+        });
     }
 }

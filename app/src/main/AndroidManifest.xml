@@ -16,7 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".bar_graph"></activity>
+        <activity android:name=".bar_graph" />
+        <activity android:name=".Hydration_ex"></activity>
     </application>
 
 </manifest>
