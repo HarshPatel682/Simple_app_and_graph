@@ -8,13 +8,25 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
+    Button bContinue;
+    Button bLogin;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button bContinue = (Button) findViewById(R.id.bContinue);
+        bContinue = (Button) findViewById(R.id.bContinue);
+        bLogin = (Button) findViewById(R.id.bLogin);
+
         bContinue.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Main_Menu.class);
+                startActivity(intent);
+            }
+        });
+
+        bLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, Main_Menu.class);
