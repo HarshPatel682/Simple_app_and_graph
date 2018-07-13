@@ -25,7 +25,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Current_Status"></activity>
+        <activity android:name=".Current_Status" />
+        <activity android:name=".progress_report"></activity>
     </application>
 
 </manifest>

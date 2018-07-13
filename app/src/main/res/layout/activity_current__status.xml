@@ -11,7 +11,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:background="@drawable/blue_background"
-        >
+        android:gravity="center">
 
 
         <ImageButton
@@ -21,15 +21,17 @@
             android:background="@android:color/transparent"
             android:paddingLeft="20dp"
             android:paddingTop="20dp"
+            android:layout_gravity="left"
             android:tint="@android:color/background_light"
 
             app:srcCompat="?attr/actionModeCloseDrawable"
             tools:layout_editor_absoluteY="367dp" />
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_gravity="left">
 
             <TextView
                 android:id="@+id/tvCurrentStatus"
@@ -40,17 +42,19 @@
                 android:textColor="@android:color/background_light"
                 android:textSize="30sp"
                 android:textStyle="bold"
-                android:paddingLeft="40dp"
-                android:paddingTop="50dp"/>
+                android:paddingTop="50dp"
+                android:paddingLeft="30dp"
+                android:layout_gravity="left"
+                />
 
             <ImageButton
                 android:id="@+id/ibRefresh"
-                android:layout_width="wrap_content"
+                android:layout_width="133dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="right"
                 android:layout_weight="1"
                 android:background="@android:color/transparent"
                 android:paddingTop="55dp"
-                android:paddingLeft="100dp"
                 app:srcCompat="@android:drawable/ic_popup_sync" />
 
         </LinearLayout>
@@ -59,21 +63,24 @@
             android:id="@+id/tvLastUpdates"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="45dp"
             android:paddingBottom="20dp"
             android:text="last updated on.."
             android:textColor="@android:color/background_light"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:paddingLeft="30dp"
+
+            android:layout_gravity="left"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:background="@android:color/background_light">
+            android:background="@android:color/background_light"
+            >
 
             <TextView
                 android:id="@+id/tvBluetoothConnectedLabel"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/connected"
                 android:paddingBottom="30dp"
@@ -82,51 +89,56 @@
                 android:text="Connected"
                 android:textColor="#2699FB"
                 android:textSize="16sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
 
             <TextView
                 android:id="@+id/tvUlcers"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="None Detected"
                 android:paddingLeft="50dp"
                 android:paddingBottom="10dp"
                 android:paddingTop="25dp"
                 android:textColor="#63B9FE"
-                android:background="@drawable/ulcers"/>
+                android:background="@drawable/ulcers"
+                android:layout_gravity="center"/>
 
             <TextView
                 android:id="@+id/tvDvt"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="None Detected"
                 android:paddingLeft="50dp"
                 android:paddingBottom="10dp"
                 android:paddingTop="25dp"
                 android:textColor="#63B9FE"
-                android:background="@drawable/dvt"/>
+                android:background="@drawable/dvt"
+                android:layout_gravity="center"/>
 
             <TextView
                 android:id="@+id/tvEdema"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/edema"
                 android:paddingBottom="10dp"
                 android:paddingLeft="50dp"
                 android:paddingTop="25dp"
                 android:text="Edema Progression Detected"
-                android:textColor="#63B9FE" />
+                android:textColor="#63B9FE"
+                android:layout_gravity="center"/>
 
             <TextView
                 android:id="@+id/tvSteps"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/steps"
                 android:paddingBottom="10dp"
                 android:paddingLeft="50dp"
                 android:paddingTop="25dp"
                 android:text="...Number of steps taken"
-                android:textColor="#63B9FE" />
+                android:textColor="#63B9FE"
+                android:layout_gravity="center"/>
 
 
         </LinearLayout>
