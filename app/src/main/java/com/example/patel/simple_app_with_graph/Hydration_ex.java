@@ -23,7 +23,7 @@ import java.util.ArrayList;
 
 public class Hydration_ex extends AppCompatActivity {
 
-    PieChart mChart;
+    PieChart pieChart;
     Button bTest;
     EditText etHydration;
     TextView tvHydration_Value;
@@ -37,18 +37,18 @@ public class Hydration_ex extends AppCompatActivity {
         etHydration = (EditText) findViewById(R.id.etHydration_Test);
         tvHydration_Value = (TextView) findViewById(R.id.tvShow_Percent);
 
-        mChart = (PieChart) findViewById(R.id.piechart);
-        mChart.setBackgroundColor(Color.WHITE);
+        pieChart = (PieChart) findViewById(R.id.piechart);
+        pieChart.setBackgroundColor(Color.WHITE);
         //moveOffScreen();
 
-        mChart.setUsePercentValues(true);
-        mChart.getDescription().setEnabled(false);
-        mChart.setDrawHoleEnabled(true);
-        mChart.setMaxAngle(180);
-        mChart.setRotationAngle(180);
-        mChart.setCenterTextOffset(0, -20);
-        mChart.setRotationEnabled(false);
-        mChart.animateXY(900, 900);
+        pieChart.setUsePercentValues(true);
+        pieChart.getDescription().setEnabled(false);
+        pieChart.setDrawHoleEnabled(true);
+        pieChart.setMaxAngle(180);
+        pieChart.setRotationAngle(180);
+        pieChart.setCenterTextOffset(0, -20);
+        pieChart.setRotationEnabled(false);
+        pieChart.animateXY(900, 900);
         setData(80);
 
         bTest.setOnClickListener(new View.OnClickListener() {
@@ -84,8 +84,8 @@ public class Hydration_ex extends AppCompatActivity {
         pieData.setValueFormatter(new PercentFormatter());
         pieData.setValueTextSize(15f);
         pieData.setValueTextColor(Color.BLUE);
-        mChart.setData(pieData);
-        mChart.invalidate();
+        pieChart.setData(pieData);
+        pieChart.invalidate();
 
     }
 
@@ -98,9 +98,10 @@ public class Hydration_ex extends AppCompatActivity {
         int offset = (int) (height + .5);
 
 
-        ConstraintLayout.LayoutParams params = (ConstraintLayout.LayoutParams)mChart.getLayoutParams();
-        //RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams)mChart.getLayoutParams();
+        ConstraintLayout.LayoutParams params = (ConstraintLayout.LayoutParams)pieChart.getLayoutParams();
+        //RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams)pieChart
+        //.getLayoutParams();
         params.setMargins(0, 0, 0, -offset);
-        mChart.setLayoutParams(params);
+        pieChart.setLayoutParams(params);
     }
 }
