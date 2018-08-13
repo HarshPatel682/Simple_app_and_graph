@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1001968532433",
+    "firebase_url": "https://predictive-wear-db.firebaseio.com",
+    "project_id": "predictive-wear-db",
+    "storage_bucket": "predictive-wear-db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1001968532433:android:baa0126599e7ee91",
+        "android_client_info": {
+          "package_name": "com.example.patel.simple_app_with_graph"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1001968532433-699qns309apj5gaa16ab7kji6tuo5f1i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.patel.simple_app_with_graph",
+            "certificate_hash": "ba77b99e410beb5109a7a63a12c7eee9ef5f302b"
+          }
+        },
+        {
+          "client_id": "1001968532433-j43dg0a495takv8bs9pjtvjks6h5kt2h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7lCUUSx3OrKgcomkf6MrpVWcVyIU65qs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1001968532433-j43dg0a495takv8bs9pjtvjks6h5kt2h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
