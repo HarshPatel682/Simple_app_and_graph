@@ -26,7 +26,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Current_Status" />
-        <activity android:name=".progress_report"></activity>
+        <activity android:name=".progress_report" />
+        <activity android:name=".login_activity"></activity>
     </application>
 
 </manifest>
